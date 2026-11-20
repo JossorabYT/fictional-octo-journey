@@ -1,17 +1,23 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="day">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17152b">
-  <title>Phrase Phone — le téléphone arabe écrit</title>
+  <meta name="theme-color" content="#f6f4ff">
+  <meta name="description" content="Inventez une histoire à plusieurs. Rejoignez un salon à distance et ajoutez une phrase chacun votre tour.">
+  <title>Phrase Phone — l’histoire continue</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <main class="shell">
-    <header class="top"><a class="brand" href="#" aria-label="Phrase Phone, accueil"><span class="brand-icon">✳</span> phrase phone</a><span class="tag">LE TÉLÉPHONE ARABE, VERSION PHRASES</span></header>
+    <header class="top">
+      <a class="brand" href="#" onclick="leaveRoom();return false" aria-label="Phrase Phone, accueil"><img class="brand-mark" src="logo.svg" alt=""><span>phrase<span class="brand-light">phone</span></span></a>
+      <div class="top-right"><span class="tag"><span class="live-dot"></span> LE TÉLÉPHONE ARABE, À DISTANCE</span><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Activer le thème nuit" title="Changer de thème"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Nuit</span></button></div>
+    </header>
     <section id="app" class="card" aria-live="polite"></section>
-    <footer>Un jeu de phrases à faire tourner entre amis ✨</footer>
+    <footer><span class="footer-mark">✳</span> Des histoires improbables, écrites ensemble.</footer>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>

@@ -20,3 +20,5 @@ La clé `sb_publishable_...` dans `config.js` est une clé publique prévue pour
 Ouvre le site, crée un salon et partage le code ou le lien d'invitation. Chaque joueur rejoint avec son prénom. L'hôte lance quand tout le monde est là. Le joueur dont c'est le tour écrit une phrase; les autres attendent. À la fin, tout le monde découvre l'histoire complète.
 
 Les salons acceptent de 2 à 12 joueurs. Les tours et la liste des joueurs se rafraîchissent automatiquement toutes les 2,5 secondes.
+
+Le thème jour/nuit se change avec le bouton en haut à droite et reste mémorisé sur l'appareil. Le logo est le fichier `logo.svg`.
